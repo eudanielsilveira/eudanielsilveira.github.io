@@ -1,0 +1,164 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+header {
+  width: 20%;
+  height: 100vh;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #272727;
+  border-right: 0.1rem solid #696969;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #696969;
+}
+.header__image {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+.header__image img {
+  width: 150px;
+  height: 150px;
+  object-position: center;
+  object-fit: cover;
+}
+header h1 {
+  text-align: center;
+  margin: 0;
+  margin-top: 2rem;
+  
+}
+header h1 small {
+  display: block;
+  font-weight: 100;
+}
+header .header__txt {
+  width: 80%;
+  margin: 2rem 0;
+}
+header .header__txt p {
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+.header__social {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__social a {
+  text-decoration: none;
+  color: #696969;
+}
+.header__social .fa-github:hover {
+  color: #fff;
+}
+.header__social .fa-codepen:hover {
+  color: #fff;
+}
+.header__social .fa-linkedin:hover {
+  color: #0073B0;
+}
+.header__social .fa-whatsapp:hover {
+  color: #00e676;
+}
+
+header nav {
+  width: 80%;
+
+  margin: 2rem 0;
+
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  text-align: center;
+  line-height: 2.5rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  color: #696969;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+
+.content {
+  width: 100vw;
+  height: 100%;
+  margin-left: 20%;
+  
+  background-color: #212D33;
+}
+
+.content main {
+  width: 100%;
+  height: auto;
+}
+.content main a .main__section {
+  height: 20vh;
+  border-bottom: 1px solid #696969;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  padding: 0 4rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content main a {
+  color: #696969;
+  text-decoration: none;
+}
+.content main a:hover {
+  transition: 50ms;
+  color: #8c66be;
+}
+.content main a .main__section .content__info {
+  margin-left: 2%;
+}
+.content main a .main__section .content__info h2 {
+  margin: 0;
+  font-size: 3.5rem;
+}
+.content main a .main__section .content__info p {
+  font-size: 1.6rem;
+  margin: 0;
+}
