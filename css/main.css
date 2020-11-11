@@ -5,14 +5,15 @@
 }
 html {
   font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
-
+}
+.container {
   display: flex;
 }
-
 header {
   width: 20%;
   height: 100vh;
@@ -28,7 +29,6 @@ header {
 
   background-color: #272727;
   border-right: 0.1rem solid #696969;
-  font-family: Arial, Helvetica, sans-serif;
   color: #696969;
 }
 .header__image {
@@ -40,8 +40,8 @@ header {
   overflow: hidden;
 }
 .header__image img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   object-position: center;
   object-fit: cover;
 }
@@ -57,25 +57,23 @@ header h1 small {
 }
 header .header__txt {
   width: 80%;
-  margin: 2rem 0;
 }
 header .header__txt p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 100;
   line-height: 1.5;
 
-  margin: 0;
+  text-align: center;
+
+  /* margin: 0; */
 }
 
-.header__social {
-  width: 80%;
-
-  display: flex;
-  justify-content: space-evenly;
-}
 .header__social a {
   text-decoration: none;
   color: #696969;
+}
+.header__social a+a {
+  margin-left: 2rem;
 }
 .header__social .fa-github:hover {
   color: #fff;
@@ -161,4 +159,53 @@ header nav ul li a:hover {
 .content main a .main__section .content__info p {
   font-size: 1.6rem;
   margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: block;
+  }
+  header {
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+    padding: 2rem 0;
+
+    position: static;    
+    border: 0;
+  }
+  .header__image {
+    width: 70%;
+    height: 70%;
+
+    border-radius: 50%;
+
+    margin: 0 auto;
+  }
+  .header__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .header__txt {
+    margin: 0 auto;
+  }
+  .header__social {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  header nav {
+    width: auto;
+    margin: 0;
+  }
+  header nav ul li a {
+    font-size: 2.5rem;
+  }
+  .content {
+    width: 100%;
+    margin: 0;
+    position: static;
+  }
 }
