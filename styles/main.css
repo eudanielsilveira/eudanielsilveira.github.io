@@ -172,10 +172,15 @@ body, h1, h2, h3 {
 
 .about__container .about__text p {
   font-size: 2rem;
+  text-align: center;
 }
 
 .about__container .about__img {
-  width: 42.5rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
