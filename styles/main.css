@@ -1,0 +1,182 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Bebas Neue', cursive;
+}
+
+body, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.hero__container {
+  padding: 2rem;
+  background-color: #1B1B1B;
+  height: 95vh;
+  color: #fff;
+}
+
+.hero__container .hero__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.hero__container .hero__nav .hero__subtitle {
+  font-size: 2.3rem;
+  display: inline-block;
+  width: 10rem;
+  text-align: center;
+  font-weight: lighter;
+  line-height: 1.8rem;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1rem;
+  letter-spacing: 0.2ch;
+}
+
+.hero__container .hero__nav .hero__subtitle span {
+  display: block;
+}
+
+.hero__container .hero__nav .hero__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__container .hero__nav .hero__name .hero__title {
+  font-size: 8rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: right;
+  line-height: 6rem;
+  padding: 2rem 1rem;
+  border-right: 1px solid;
+  margin-right: 1rem;
+}
+
+.hero__container .hero__nav .hero__name .hero__title span {
+  display: block;
+}
+
+.hero__container .hero__nav .hero__name .contact__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+}
+
+.hero__container .hero__nav .hero__name .contact__link a {
+  font-size: 2.6rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero__container .hero__nav .hero__name .contact__link a + a {
+  margin-top: .5rem;
+}
+
+.hero__container .nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__container .nav__menu li {
+  text-align: center;
+}
+
+.hero__container .nav__menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.about__container .about__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  height: 42rem;
+}
+
+.about__container .about__text p {
+  font-size: 2rem;
+}
+
+.about__container .about__img {
+  width: 42.5rem;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+/*# sourceMappingURL=main.css.map */

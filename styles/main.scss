@@ -1,0 +1,94 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import './reset';
+@import './mixins';
+@import './variables';
+
+.hero__container {
+    padding: 2rem;
+    background-color: $color-primary;
+    height: 95vh;
+    color: $color-secondary;
+
+    .hero__nav {
+        @include flexCenter(column, space-between, center);
+        height: 100%;
+        .hero__subtitle {
+            font-size: 2.3rem;
+            display: inline-block;
+    
+            width: 10rem;
+            text-align: center;
+            font-weight:lighter;
+            line-height: 1.8rem;
+            border-bottom: 1px solid $color-secondary;
+            padding-bottom: 1rem;
+            letter-spacing: 0.2ch;
+            span {
+                display: block;
+            }
+        }
+
+        .hero__name {
+            @include flexCenter(row, none, center);
+            .hero__title {
+                font-size: 8rem;
+                display: inline-block;
+                font-weight: 400;
+                text-align: right;
+                line-height: 6rem;
+                padding: 2rem 1rem;
+                border-right: 1px solid;
+                margin-right: 1rem;
+                span {
+                    display: block;
+                }
+            }
+            .contact__link {
+                @include flexCenter(column, none, none);
+                a {
+                    font-size: 2.6rem;
+                    text-decoration: none;
+                    color: $color-secondary;
+                }
+                a+a {
+                    margin-top: .5rem;
+                }
+            }
+            
+        }
+    }
+
+    .nav__menu {
+        @include flexCenter(column, none, none);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: $color-secondary;
+                font-size: 4rem;
+            }
+        }
+    }
+
+}
+
+.about__container {
+    .about__text {
+        @include flexCenter(column, center, center);
+        padding: 2rem;
+        height: 42rem;
+        p {
+            font-size: 2rem;
+        }
+    }
+    .about__img {
+        width: 42.5rem;
+        filter: grayscale(1);
+    }
+}

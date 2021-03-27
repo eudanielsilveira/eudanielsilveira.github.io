@@ -1,0 +1,13 @@
+@mixin flexCenter($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin resetList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
