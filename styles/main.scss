@@ -16,16 +16,17 @@
         @include flexCenter(column, space-between, center);
         height: 100%;
         .hero__subtitle {
-            font-size: 2.3rem;
+            font-family: gotham;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            letter-spacing: 0.2ch;
             display: inline-block;
     
-            width: 10rem;
             text-align: center;
             font-weight:lighter;
-            line-height: 1.8rem;
+            line-height: 1.5rem;
             border-bottom: 1px solid $color-secondary;
             padding-bottom: 1rem;
-            letter-spacing: 0.2ch;
             span {
                 display: block;
             }
@@ -49,7 +50,7 @@
             .contact__link {
                 @include flexCenter(column, none, none);
                 a {
-                    font-size: 2.6rem;
+                    font-size: 4.6rem;
                     text-decoration: none;
                     color: $color-secondary;
                 }
@@ -180,4 +181,8 @@
             }
         }
     }
+}
+
+@media (min-width: 500px) {
+
 }
