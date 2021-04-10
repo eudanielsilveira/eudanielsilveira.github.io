@@ -203,10 +203,10 @@ body, h1, h2, h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
@@ -218,12 +218,73 @@ body, h1, h2, h3 {
 
 .main__container .skills__container .skill__list li a {
   text-decoration: none;
-  font-size: 6rem;
+  font-size: 2.3rem;
   color: #1B1B1B;
+  display: block;
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main__container .skills__container .skill__list li + li {
-  margin-left: 1rem;
+.main__container .skills__container .skill__list li a .bar {
+  border: 1px solid;
+  width: 10rem;
+  height: 2rem;
+}
+
+.main__container .skills__container .skill__list li a .bar .progress-bar-html {
+  background-color: #1B1B1B;
+  height: 100%;
+  width: 70%;
+}
+
+.main__container .skills__container .skill__list li a .bar .progress-bar-css {
+  background-color: #1B1B1B;
+  height: 100%;
+  width: 80%;
+}
+
+.main__container .skills__container .skill__list li a .bar .progress-bar-sass {
+  background-color: #1B1B1B;
+  height: 100%;
+  width: 70%;
+}
+
+.main__container .skills__container .skill__list li a .bar .progress-bar-js {
+  background-color: #1B1B1B;
+  height: 100%;
+  width: 30%;
+}
+
+.main__container .skills__container .skill__list li a .bar .progress-bar-figma {
+  background-color: #1B1B1B;
+  height: 100%;
+  width: 60%;
+}
+
+.main__container .skills__container .skill__list li a .bar .progress-bar-git {
+  background-color: #1B1B1B;
+  height: 100%;
+  width: 80%;
+}
+
+.main__container .skills__container .skill__list li a .bar .progress-bar-linux {
+  background-color: #1B1B1B;
+  height: 100%;
+  width: 50%;
 }
 
 .main__container .project__container {
