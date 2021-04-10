@@ -12,51 +12,30 @@
     height: 95vh;
     color: $color-secondary;
 
+    @include flexCenter(column, flex-end, center);
+
     .hero__nav {
         @include flexCenter(column, space-between, center);
-        height: 100%;
-        .hero__subtitle {
-            font-family: gotham;
-            text-transform: uppercase;
-            font-size: 1.6rem;
-            letter-spacing: 0.2ch;
-            display: inline-block;
-    
-            text-align: center;
-            font-weight:lighter;
-            line-height: 1.5rem;
-            border-bottom: 1px solid $color-secondary;
-            padding-bottom: 1rem;
-            span {
-                display: block;
-            }
-        }
+        height: 50vh;
+        .nav__logo {
+            border-right: 1px solid;
+            padding: 2rem;
 
-        .hero__name {
-            @include flexCenter(row, none, center);
-            .hero__title {
-                font-size: 8rem;
+            @include flexCenter(column, none, center);
+            .logo__title {
+                font-size: 5rem;
                 display: inline-block;
                 font-weight: 400;
                 text-align: right;
-                line-height: 6rem;
-                padding: 2rem 1rem;
-                border-right: 1px solid;
-                margin-right: 1rem;
+                line-height: 3.8rem;
                 span {
                     display: block;
                 }
             }
-            .contact__link {
-                @include flexCenter(column, none, none);
-                a {
-                    font-size: 4.6rem;
-                    text-decoration: none;
-                    color: $color-secondary;
-                }
-                a+a {
-                    margin-top: .5rem;
-                }
+            .logo__subtitle {
+                text-align: center;
+                font-size: 2rem;
+                line-height: 1.4rem;
             }
             
         }

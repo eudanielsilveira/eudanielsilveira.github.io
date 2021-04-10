@@ -21,6 +21,21 @@ body, h1, h2, h3 {
   background-color: #1B1B1B;
   height: 95vh;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero__container .hero__nav {
@@ -39,60 +54,12 @@ body, h1, h2, h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  height: 50vh;
 }
 
-.hero__container .hero__nav .hero__subtitle {
-  font-family: gotham;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  letter-spacing: 0.2ch;
-  display: inline-block;
-  text-align: center;
-  font-weight: lighter;
-  line-height: 1.5rem;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 1rem;
-}
-
-.hero__container .hero__nav .hero__subtitle span {
-  display: block;
-}
-
-.hero__container .hero__nav .hero__name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero__container .hero__nav .hero__name .hero__title {
-  font-size: 8rem;
-  display: inline-block;
-  font-weight: 400;
-  text-align: right;
-  line-height: 6rem;
-  padding: 2rem 1rem;
+.hero__container .hero__nav .nav__logo {
   border-right: 1px solid;
-  margin-right: 1rem;
-}
-
-.hero__container .hero__nav .hero__name .hero__title span {
-  display: block;
-}
-
-.hero__container .hero__nav .hero__name .contact__link {
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,19 +72,27 @@ body, h1, h2, h3 {
   -webkit-box-pack: none;
       -ms-flex-pack: none;
           justify-content: none;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.hero__container .hero__nav .hero__name .contact__link a {
-  font-size: 4.6rem;
-  text-decoration: none;
-  color: #fff;
+.hero__container .hero__nav .nav__logo .logo__title {
+  font-size: 5rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: right;
+  line-height: 3.8rem;
 }
 
-.hero__container .hero__nav .hero__name .contact__link a + a {
-  margin-top: .5rem;
+.hero__container .hero__nav .nav__logo .logo__title span {
+  display: block;
+}
+
+.hero__container .hero__nav .nav__logo .logo__subtitle {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.4rem;
 }
 
 .hero__container .nav__menu {
