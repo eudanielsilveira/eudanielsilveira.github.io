@@ -38,6 +38,18 @@ body, h1, h2, h3 {
           align-items: center;
 }
 
+.hero__container .git-atalho {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.hero__container .git-atalho .fab {
+  color: #fff;
+}
+
 .hero__container .hero__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,7 +104,7 @@ body, h1, h2, h3 {
 .hero__container .hero__nav .nav__logo .logo__subtitle {
   text-align: center;
   font-size: 2rem;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
 }
 
 .hero__container .nav__menu {
