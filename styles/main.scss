@@ -10,30 +10,18 @@
 .hero__container {
     padding: 2rem;
     background-color: $color-primary;
-    height: 95vh;
     color: $color-secondary;
+    height: 95vh;
 
-    .git-atalho {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-
-        text-decoration: none;
-        font-size: 3rem;
-        .fab {
-            color: $color-secondary;
-        }
-    }
-    @include flexCenter(column, flex-end, center);
-
+    @include flexCenter(column, none, flex-end, center);
     .hero__nav {
-        @include flexCenter(column, space-between, center);
-        height: 50vh;
+        height: 66%;
+        @include flexCenter(column, none, space-between, center);
         .nav__logo {
             border-right: 1px solid;
             padding: 2rem;
 
-            @include flexCenter(column, none, center);
+            @include flexCenter(column, none, none, center);
             .logo__title {
                 font-size: 5rem;
                 display: inline-block;
@@ -51,29 +39,46 @@
             }
             
         }
-    }
+        .nav-btn {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
 
-    .nav__menu {
-        @include flexCenter(column, none, none);
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        li {
-            text-align: center;
-            a {
-                text-decoration: none;
+            text-decoration: none;
+            font-size: 2rem;
+            color: $color-secondary;
+            .fa-times {
+                font-size: 2.5rem;
+            }
+        }
+        .nav__menu {
+            @include flexCenter(column, none, none, none);
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: $color-secondary;
+                    font-size: 4rem;
+                }
+            }
+        }
+        .git-atalho {
+            text-decoration: none;
+            font-size: 3rem;
+            .fab {
                 color: $color-secondary;
-                font-size: 4rem;
             }
         }
     }
-
 }
 
 .main__container {
     .about__container {
         .about__text {
-            @include flexCenter(column, center, center);
+            @include flexCenter(column, none, center, center);
             padding: 2rem;
             height: 42rem;
             p {
@@ -91,7 +96,7 @@
         padding: 2rem;
         height: 42rem;
         background-color: $color-secondary;
-        @include flexCenter(column, space-evenly, center);
+        @include flexCenter(column, none, space-evenly, center);
         .section__title {
             font-size: 4rem;
             color: $color-primary;
@@ -99,7 +104,7 @@
         }
         .skill__list {
             @include resetList;
-            @include flexCenter(column, space-around, center);
+            @include flexCenter(column, none, space-around, center);
             li {
                 a {
                     text-decoration: none;
@@ -108,7 +113,7 @@
                     display: block;
                     width: 20rem;
 
-                    @include flexCenter(row, space-between, center);
+                    @include flexCenter(row, none, space-between, center);
                     .bar {
                         border: 1px solid;
                         width: 10rem;
@@ -164,7 +169,7 @@
     .project__container {
         background-color: $color-primary;
         padding: 2rem;
-        @include flexCenter(column, center,center);
+        @include flexCenter(column, none, center,center);
         .section__title {
             color: $color-secondary;
             font-size: 4rem;
@@ -211,7 +216,7 @@
     background-color: $color-primary;
     .footer__contact {
         @include resetList;
-        @include flexCenter(row, space-around, cen);
+        @include flexCenter(row, none, space-around, cen);
         li {
             a {
                 text-decoration: none;
@@ -220,4 +225,8 @@
             }
         }
     }
+}
+
+.invisible {
+    display: none;
 }

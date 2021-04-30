@@ -9,11 +9,7 @@
 
   <body>
     <header class="hero__container">
-        <a class="git-atalho" href="https://github.com/danielsilveira-dev">
-            <i class="fab fa-github"></i>
-        </a>
-        <nav class="hero__nav">
-            
+        <nav class="hero__nav">            
             <div class="nav__logo">
                     <h1 class="logo__title">
                         Daniel 
@@ -29,8 +25,10 @@
                     </a>
                 </div> -->
             </div>
-            
-            <ul class="nav__menu">
+            <a class="nav-btn" data-btn-menu href="#">
+                <i class="fas fa-bars"></i>
+            </a>
+            <ul data-hero-menu class="invisible">
                 <li>
                     <a href="#about">
                         Sobre
@@ -49,6 +47,9 @@
                     </a>
                 </li>                
             </ul>
+            <a class="git-atalho" href="https://github.com/danielsilveira-dev">
+                <i class="fab fa-github"></i>
+            </a>
         </nav>
     </header>
 
@@ -200,5 +201,6 @@
             </li>
         </ul>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
