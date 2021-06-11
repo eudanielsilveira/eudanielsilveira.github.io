@@ -148,6 +148,24 @@ body, h1, h2, h3 {
   color: #fff;
 }
 
+.main__container .about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main__container .about__container .about__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,7 +183,6 @@ body, h1, h2, h3 {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem;
-  height: 42rem;
 }
 
 .main__container .about__container .about__text p {
@@ -174,7 +191,29 @@ body, h1, h2, h3 {
 }
 
 .main__container .about__container .about__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  background-color: #1B1B1B;
+  padding: 3rem;
+}
+
+.main__container .about__container .about__img .img-profile {
+  width: 200px;
+  border-radius: 50%;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
@@ -324,6 +363,22 @@ body, h1, h2, h3 {
 }
 
 .main__container .project__container .project__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -339,7 +394,12 @@ body, h1, h2, h3 {
 }
 
 .main__container .project__container .project__list li a img {
-  width: 100%;
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .main__container .project__container .project__list li a p {
@@ -349,10 +409,6 @@ body, h1, h2, h3 {
   background-color: #fff;
   padding: 1rem;
   color: #1B1B1B;
-}
-
-.main__container .project__container .project__list li + li {
-  margin-top: 1rem;
 }
 
 .main__container .project__container .project-btn {
