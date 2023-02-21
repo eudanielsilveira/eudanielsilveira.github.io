@@ -1,208 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
   <head>
-    <meta charset="UTF-8" />    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Daniel Silveira</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <title>DevLinks</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
-    <header class="hero__container">
-        <nav class="hero__nav">            
-            <div class="nav__logo">
-                    <h1 class="logo__title">
-                        Daniel 
-                        <span>Silveira</span>
-                    </h1>
-                    <h2 class="logo__subtitle">
-                        Frontend Developer
-                    </h2>
-                <!-- <div class="contact__link">
-                    
-                    <a href="https://www.linkedin.com/in/daniel-silveira-66688674/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div> -->
-            </div>
-            <a class="nav-btn" data-btn-menu href="#">
-                <i class="fas fa-bars"></i>
-            </a>
-            <ul data-hero-menu class="invisible">
-                <li>
-                    <a href="#about">
-                        Sobre
-                    </a>
-                </li>
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/avatar.png"
+          alt="Foto de Daniel sorrindo usando óculos com o Arco do Triunfo atrás"
+        />
+        <p>@danielsilveira-dev</p>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <ul>
+        <li>
+          <a href="https://www.twitch.tv/danielsilveirabr/about" target="_blank"
+            >Lives na Twitch!</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/danielsilveira-dev" target="_blank"
+            >Veja meu portfolio</a
+          >
+        </li>
+      </ul>
+      <div id="social-links">
+        <a href="https://github.com/danielsilveira-dev" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/danielsilveira_/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
 
-                <li>
-                    <a href="#skills">
-                        Skills
-                    </a>
-                </li>
+        <a
+          href="https://api.whatsapp.com/send?phone=5548999159246&text=Oi!%20Tudo%20bem?%20%20Assim%20que%20eu%20visualizar%20a%20mensagem,%20já%20falo%20contigo!"
+          target="_blank"
+        >
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/daniel-silveira-66688674/"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <footer>
+        Feito com ♥ pela
+        <a href="https://rocketseat.com.br" target="_blank">Rocketseat</a>
+      </footer>
+    </div>
 
-                <li>
-                    <a href="#project">
-                        Projetos
-                    </a>
-                </li>                
-            </ul>
-            <a class="git-atalho" href="https://github.com/danielsilveira-dev">
-                <i class="fab fa-github"></i>
-            </a>
-        </nav>
-    </header>
-
-    <main class="main__container">
-        <section class="about__container">
-            <div class="about__text">
-                <p id="about">
-                    Desde 2007 trabalhei com tecnologia, atuando como suporte técnico, presencial e remoto. Hoje, estou cursando o 2º Semestre da graduação Sistemas para Internet e quero atuar como desenvolvedor com o objetivo de aprender, compartilhar conhecimento e experiência com a comunidade.
-                </p>
-            </div>
-            <div class="about__img">
-                <img class="img-profile" src="./assets/foto-daniel.jpg" alt="Foto de Daniel">
-            </div>
-        </section>
-
-        <section class="skills__container">
-            <h2 id="skills" class="section__title">Skills</h2>
-            
-            <ul class="skill__list">
-                <li>
-                    <a href="#">
-                        <span class="skill__name">
-                            html
-                        </span>
-                        <div class="bar">
-                            <div class="progress-bar-html"></div>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="skill__name">
-                            css
-                        </span>
-                        <div class="bar">
-                            <div class="progress-bar-css"></div>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="skill__name">
-                            sass
-                        </span>
-                        <div class="bar">
-                            <div class="progress-bar-sass"></div>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="skill__name">
-                            JavaScript
-                        </span>
-                        <div class="bar">
-                            <div class="progress-bar-js"></div>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="skill__name">
-                            figma
-                        </span>
-                        <div class="bar">
-                            <div class="progress-bar-figma"></div>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="skill__name">
-                            github
-                        </span>
-                        <div class="bar">
-                            <div class="progress-bar-git"></div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="skill__name">
-                            linux
-                        </span>
-                        <div class="bar">
-                            <div class="progress-bar-linux"></div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <section class="project__container">
-            <h2 id="project" class="section__title">Projetos</h2>
-
-            <ul class="project__list">
-                <li>
-                    <a href="https://github.com/danielsilveira-dev/danielsilveira-dev.github.io" title="Projeto do meu Portfolio" target="_blank">
-                        <img src="./assets/project_portfolio.png" alt="">
-                        <p>Portfolio</p>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" title="Projto Apple" target="_blank">
-                        <img src="./assets/project_portfolio-1.png" alt="">
-                        <p>Apple</p>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" title="Site das cores da Adobe" target="_blank">
-                        <img src="./assets/project_portfolio-2.png" alt="">
-                        <p>Adobe Kuler</p>
-                    </a>
-                </li>
-            </ul>
-            <a class="project-btn" href="https://github.com/danielsilveira-dev?tab=repositories">Mais</a>
-        </section>
-    </main>
-
-    <footer class="footer__container">
-        <ul class="footer__contact">
-            <li>
-                <a href="https://api.whatsapp.com/send?phone=5548999159246">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://codepen.io/danielsilveira-dev">
-                    <i class="fab fa-codepen" title="danielsilveira-dev"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.linkedin.com/in/daniel-silveira-66688674/">
-                    <i class="fab fa-linkedin" title="Linkedin"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://github.com/danielsilveira-dev">
-                    <i class="fab fa-github" title="danielsilveira-dev"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
-    <script src="./js/menu.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
