@@ -57,7 +57,8 @@ body * {
 }
 
 #profile img {
-  width: 112px;
+  width: 300px;
+  border-radius: 100rem;
 }
 
 #profile p {
